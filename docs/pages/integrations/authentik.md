@@ -13,6 +13,7 @@
 - `Model created` - when new models are created in the admin interface
 - `Model updated` - when models are updated/changed in the admin interface
 - `Login` - when successful logins occur
+- `Login failed` - when login attempts fail
 - `Logout` - when logouts occur
 
 ---
