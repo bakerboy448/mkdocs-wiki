@@ -11,8 +11,20 @@ it is recommended that you put it behind a reverse proxy if you're going to expo
 - You'll want to tune the `upstreams` and `urlbase` client settings for your environment.
   - If your reverse proxy IP is `192.168.3.45` then set `upstreams`
     in the Trust Profile page of the local Notifiarr Client to `192.168.3.45/32`
+  - You can also set this with the `DN_UPSTREAMS_0` environment variable.
 - The `urlbase` on the local Notifiarr client configuration page can be left at `/`,
   but change it if you serve this app from a subfolder like `/notifiarr`.
+  - You can also set this with the `DN_URLBASE` environment variable.
+
+!!! info "WebSocket Support"
+    The Notifiarr client Web UI uses WebSocket connections. Your reverse proxy configuration
+    must include the `Upgrade` and `Connection` headers for the UI to function correctly.
+    The examples below include these headers.
+
+!!! warning "API Path"
+    The `/api` path must not be protected by external authentication (Authelia, Organizr, LDAP, etc.).
+    It uses API key authentication handled by the client. If you protect it, integrations from
+    notifiarr.com will fail. The examples below handle this correctly.
 
 ## Cloudflare Users
 
