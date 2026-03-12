@@ -7,8 +7,23 @@
 
 ![trigger-channel.png](../../assets/screenshots/integrations/uptimekuma/trigger-channel.png)
 
-- `issues` - be notified of any issues
-- `restored` - be notified when sites are back up
+- `Issue` - Be notified of any issues.
+- `Restored` - Be notified when sites are back up.
+
+### Notification Fields
+
+Each trigger has the following notification fields that can be toggled on or off:
+
+| Field | Description |
+|-------|-------------|
+| `Name` | Monitor name |
+| `Status` | Current monitor status |
+| `URL` | Monitored URL |
+| `Type` | Monitor type |
+| `Timeout` | Monitor timeout value |
+| `Method` | HTTP method used |
+| `Maintenance` | Maintenance status |
+| `Codes` | Expected status codes |
 
 ## Instructions
 
