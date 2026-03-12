@@ -38,7 +38,7 @@
 | <center><b>Extras</b></center> | | |
 | Access to community sync<br>-- Upload your own formats for public/private use | ✅ | ✅ |
 | Instant sync when TRaSH updates | | ✅ |
-| Jump to top of the querue | | ✅ |
+| Jump to top of the queue | | ✅ |
 | Trigger a sync from Discord | | ✅ |
 
 ## Client Setup
@@ -127,6 +127,9 @@ Here we can manage existing profiles or add new profiles
 ### Quality
 
 Here you can edit quality names within a specific group and choose to sync them to your starr instance.
+
+!!! note
+    When quality sync is used, optional groups that are part of the TRaSH quality profile may be enabled or disabled as you wish. No further settings are needed.
 
 ![quality-tab.png](../../assets/screenshots/integrations/trash/quality-tab.png)
 
