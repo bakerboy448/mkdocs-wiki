@@ -5,6 +5,12 @@
 
 ## Trigger options
 
+The following triggers are available:
+
+- `Started` - When a monitored website goes down or becomes unreachable.
+- `Acknowledged` - When you acknowledge the incident.
+- `Resolved` - When the monitored website returns a successful response.
+
 ![trigger-channels.png](../../assets/screenshots/integrations/websitestatus/trigger-channels.png)
 
 1. Toggle on/off for each website being monitored
@@ -23,7 +29,7 @@ Click the **cog icon** to open the configuration options for website monitoring.
 ![configuration.png](../../assets/screenshots/integrations/websitestatus/configuration.png)
 
 1. Colors for notifications based on status
-2. Select pre-defined indexters to monitor
+2. Select pre-defined indexers to monitor
 3. Update the selected indexer
 4. toggle active state on/off
 5. URL of the desired website
