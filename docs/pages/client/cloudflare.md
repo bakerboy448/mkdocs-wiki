@@ -28,3 +28,19 @@ Specific configuration required for Cloudflare's various options are detailed be
     1. `Service`: HTTP + Your Local IP Address for Notifiarr
 
 Save your host name settings, that's it! Your client is now exposed to the Internet!
+
+## Cloudflare WAF / ZeroTrust
+
+If you use Cloudflare WAF rules or ZeroTrust to protect your Notifiarr client, you must
+ensure that the Notifiarr.com website can still communicate with the client's `/api` path.
+
+The client communicates with `https://notifiarr.com` and the website communicates back
+through the Site Tunnel (websocket). If you expose your client directly through Cloudflare
+and have WAF or ZeroTrust rules, create a bypass rule or application policy that allows
+requests from the Notifiarr.com servers to reach the `/api` path on your client's domain.
+
+!!! tip "Site Tunnel"
+    The recommended approach is to use the built-in **Site Tunnel** feature instead of
+    exposing the client to the Internet. The Site Tunnel creates a persistent websocket
+    connection from the client to notifiarr.com, so no inbound port or firewall rules
+    are needed. Configure this on the *Settings => Site Tunnel* page in the client Web UI.
