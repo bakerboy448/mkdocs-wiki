@@ -20,14 +20,15 @@
 ### Triggers
 
 - `Grab` - Receive a notification when media is initially grabbed (RSS or manual)
-- `Download` - Receive a notification when media **new** is successfully imported
+- `Imported` - Receive a notification when media **new** is successfully imported
 - `Update` - Receive a notification when the application updates
 - `Upgrade` - Receive a notification when **upgraded** media is successfully imported
-- `Failed` - Custom notification type based on previous grabs. If the system detects a grab for the same media with the same quality or better before the previous one was imported then it will set the previous one as failed
 - `Health` - Receive a notification when the application reports an issue
 - `Backup` - Receive a notification when a backup occurs
 - `Corrupt` - Monitor backups for corruption and size loss
-- `Deleted` - Be notified when media is deleted
+- `Album delete` - Be notified when an album is deleted
+- `Artist add` - Receive a notification when an artist is added
+- `Artist delete` - Be notified when an artist is deleted
 
 ---
 
