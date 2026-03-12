@@ -21,7 +21,7 @@
 
 - `Movie Added` - Receive a notification when media is added to Radarr
 - `Grab` - Receive a notification when media is initially grabbed (RSS or manual)
-- `Imported` - Receive a notification when media **new** is successfully imported
+- `Downloaded` - Receive a notification when media **new** is successfully imported
 - `Upgrade` - Receive a notification when **upgraded** media is successfully imported
 - `Deleted` - Be notified when media is deleted
 - `Update` - Receive a notification when the application updates
