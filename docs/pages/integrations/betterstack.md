@@ -12,7 +12,8 @@
 1. Triggers
     - `Started` - Sent when Better Uptime detects an issue with a site you are monitoring
     - `Ack` (Acknowledged) - Sent when you mark the issue as acknowledged through Better Uptime
-    - `Resoled` - Sent when the site you are monitoring returns a successful response
+    - `Resolved` - Sent when the site you are monitoring returns a successful response
+    - `Monitor changes` - Sent when a monitor configuration is changed
 1. Channel
     - Pick a channel from your server to send these notifications
 
