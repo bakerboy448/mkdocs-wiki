@@ -15,7 +15,7 @@
 ### 1. Triggers
 
 - `Grab` - Receive a notification when media is initially grabbed (RSS or manual)
-- `Imported` - Receive a notification when media **new** is successfully imported
+- `Downloaded` - Receive a notification when media **new** is successfully imported
 - `Upgrade` - Receive a notification when **upgraded** media is successfully imported
 - `Series Added` - Receive a notification when a series is added
 - `Deleted` - Be notified when media is deleted
