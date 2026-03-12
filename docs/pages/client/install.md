@@ -156,7 +156,8 @@ curl -sSL https://raw.githubusercontent.com/Notifiarr/notifiarr/main/userscripts
 This project builds automatically in [Docker Cloud](https://hub.docker.com/r/golift/notifiarr)
 and creates [ready-to-use multi-architecture images](https://hub.docker.com/r/golift/notifiarr/tags).
 The `latest` tag is always a tagged release in GitHub.
-It also builds in a GitHub Action and publishes to GHCR (ghcr.io).
+It also builds in a GitHub Action and publishes to GHCR (`ghcr.io/notifiarr/notifiarr`).
+A CUDA-enabled image is available for Nvidia GPU monitoring: `ghcr.io/notifiarr/notifiarr:cuda`.
 
 ### Compose
 
@@ -195,6 +196,7 @@ but it's not recommended and only for advanced-needs.
 docker pull golift/notifiarr
 docker run --hostname $(hostname) -d --privileged \
   -v /var/run/utmp:/var/run/utmp \
+  -v /etc/machine-id:/etc/machine-id \
   -e "DN_API_KEY=abcdef-12345-bcfead-43312-bbbaaa-123" \
   -e "DN_SONARR_0_URL=http://localhost:8989" \
   -e "DN_SONARR_0_API_KEY=kjsdkasjdaksdj" \
