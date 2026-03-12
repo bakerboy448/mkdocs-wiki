@@ -57,6 +57,10 @@ These are all the configurable options available to the user.
 
 Here you can select individual color schemes for each available trigger.
 
+- `Up` - When a monitored service is restored.
+- `Down` - When a monitored service is unreachable.
+- `Both` - When a monitored service is restored and another service is unreachable at the same time.
+
 ![triggers.png](../../assets/screenshots/integrations/network/triggers.png)
 
 ## Integration Settings (Monitor Settings)
