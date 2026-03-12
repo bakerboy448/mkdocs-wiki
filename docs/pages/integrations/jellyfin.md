@@ -8,13 +8,17 @@
 ![trigger-channels.png](../../assets/screenshots/integrations/jellyfin/trigger-channels.png)
 
 1. Triggers
-    - `Items` - Receive a notification when media is added
+    - `Item added` - Receive a notification when media is added
     - `Play` - Receive a notification when media has started playing
     - `Stop` - Receive a notification when media has stopped playing
-    - `Plugin Install` - Receive a notification when a plugin has been installed
-    - `Plugin Uninstall` - Receive a notification when a plugin has been removed
-1. More Triggers
-    - Open the configuration to enable/disable more triggers
+    - `Finished` - Receive a notification when media has finished playing
+    - `Plugin installing` - Receive a notification when a plugin is being installed
+    - `Plugin uninstalled` - Receive a notification when a plugin has been removed
+    - `Session start` - Receive a notification when a new session starts
+    - `User created` - Receive a notification when a new user is created
+    - `User deleted` - Receive a notification when a user is deleted
+    - `User account locked` - Receive a notification when a user account is locked
+    - `User password changed` - Receive a notification when a user changes their password
 1. Channel
     - Setup all the channels needed for each trigger
 
