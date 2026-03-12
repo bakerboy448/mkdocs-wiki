@@ -11,7 +11,7 @@
 ![trigger-channels.png](../../assets/screenshots/integrations/whisparr/trigger-channels.png)
 
 - `Grab` - Notifications for grabs that occur
-- `Imports` - Notifications for when media is imported
+- `Import` - Notifications for when media is imported
 - `Upgrade` - Notifications for media upgrades
 - `Added` - Notifications for new media added
 - `Deleted` - Notifications for when media is deleted
