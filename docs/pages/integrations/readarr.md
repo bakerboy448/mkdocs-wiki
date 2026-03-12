@@ -12,9 +12,10 @@
 ### Triggers
 
 - `Grab` - Receive a notification when media is initially grabbed (RSS or manual)
-- `Download` - Receive a notification when media **new** is successfully imported
+- `Imported` - Receive a notification when media **new** is successfully imported
 - `Update` - Receive a notification when the application updates
 - `Upgrade` - Receive a notification when **upgraded** media is successfully imported
+- `Author Added` - Receive a notification when an author is added
 - `Health` - Receive a notification when the application reports an issue
 - `Backup` - Receive a notification when a backup occurs
 - `Corrupt` - Monitor backups for corruption and size loss
