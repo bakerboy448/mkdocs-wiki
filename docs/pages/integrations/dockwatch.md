@@ -13,7 +13,8 @@
 
 3. `Health` - Trigger a notification if a container becomes unhealthy.
 
-4. `Updates` - Trigger a notification when a container has a available update.
+4. `Updates` - Trigger a notification when a container has an available update.
+    - Notification field: `Digest hash` - Include the image digest hash in the notification.
 
 5. `Prunes` - Trigger a notification when a container image, or volume has been pruned.
 
@@ -47,6 +48,7 @@ Here is the setup on dockwatch's end.
 ![configuration.png](../../assets/screenshots/integrations/Dockwatch/configuration.png)
 
 1. `Customize` - Under the customize tab you can change the color of your notification for each available trigger.
+2. `Full image names` - Show the full image name instead of truncating with ellipsis.
 
 ### Notification Examples
 
