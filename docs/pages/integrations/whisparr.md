@@ -29,7 +29,7 @@
 
 ![instructions.png](../../assets/screenshots/integrations/whisparr/instructions.png)
 
-1. Instructions on how to setup the notifiarr connect in prowlarr
+1. Instructions on how to setup the notifiarr connect in Whisparr
 
 !!! info
     Add the Connect using its built in Connection for **Notifiarr**. In Whisparr click Settings → Connect → <kb>+</kb> → Notifiarr, once done correctly you will receive a test notification :smile:
