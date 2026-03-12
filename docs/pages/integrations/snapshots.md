@@ -53,18 +53,21 @@ The following Trigger options are available.
 
 The triggers used by the snapshot integration have the following allowed values.
 
-1. `Raid` - Using the Comparator "contains" with a Value of "_" will alert of a failure.
-1. `MegaCLI` - Using the Comparator "contains" with a Value of "degraded".
-1. `Load` - Value can be a decimal or whole number.
-1. `Users` - Value can be a whole Number.
-1. `Drive Age (Days)` - Value can be a number in days.
-1. `Drive Temp` - Value can be a decimal or whole number.
-1. `Drive SMART` - Using the Comparator "contains" with a Value of either "fail" OR "pass"
-1. `Storage (Free GB)` - Value can be a whole number or decimal followed by G for Gigabyte or T for Terabyte. e.g. 500G or 0.5T
-1. `Quota (Free GB)` - Value can be a whole number or decimal followed by G for Gigabyte or T for Terabyte. e.g. 500G or 0.5T
-1. `CPU Temp` - Value can be a decimal or whole number.
 1. `CPU Load` - Value can be a decimal or whole number.
+1. `CPU Temp` - Value can be a decimal or whole number.
+1. `Drive SMART` - Using the Comparator "contains" with a Value of either "fail" OR "pass"
+1. `Drive Temp` - Value can be a decimal or whole number.
+1. `Load` - Value can be a decimal or whole number.
+1. `MegaCLI` - Using the Comparator "contains" with a Value of "degraded".
+1. `Quota (Free GB)` - Value can be a whole number or decimal followed by G for Gigabyte or T for Terabyte. e.g. 500G or 0.5T
+1. `Raid` - Using the Comparator "contains" with a Value of "_" will alert of a failure.
 1. `RAM Load` - Value can be a decimal or whole number.
+1. `Storage (Free GB)` - Value can be a whole number or decimal followed by G for Gigabyte or T for Terabyte. e.g. 500G or 0.5T
+1. `Synology HA Status` - Synology High Availability cluster status monitoring.
+1. `Users` - Value can be a whole Number.
+
+!!! note
+    Some triggers are OS specific. Create rules based on your notification output.
 
 ---
 
@@ -73,6 +76,10 @@ The triggers used by the snapshot integration have the following allowed values.
 Allows the user to update existing messages and change between Fahrenheit and Celsius.
 
 ![extra_settings.jpg](../../assets/screenshots/integrations/snapshots/extra_settings.jpg)
+
+- `Temperature units` - Switch between Fahrenheit and Celsius for temperature displays.
+- `Update existing messages` - When enabled, new snapshots update the existing Discord message instead of posting a new one.
+- `Drive map` - Remap drive paths in notifications. Format: `/find,/replace` (one mapping per line). Example: `/mnt/remotes/nas/pool-a,/pool-a`
 
 ---
 
